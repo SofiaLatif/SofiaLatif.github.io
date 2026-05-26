@@ -144,33 +144,33 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-12 text-base">
               <div className="md:col-span-2 space-y-6">
                 <p className="text-gray-700 dark:text-zinc-300 leading-relaxed">
-                  Bonjour! Je m&apos;appelle <strong>Sofia</strong> et je suis en troisième année de licence de biologie. J&apos;aime explorer différents aspects du vivant, je suis passionnée par la génétique, par les interactions entre les organismes avec leur environnement et j&apos;adore expérimenter ! Pour mon projet de fin de licence je tenais à mettre un point d&apos;honneur sur ce qui me plait le plus en biologie : tenter de comprendre l&apos;incroyable machinerie du vivant.
+                  Bonjour! Je m&apos;appelle <strong>Sofia </strong> et je suis en troisième année de licence de biologie. J&apos;aime explorer différents aspects du vivant, je suis passionnée par la génétique, par les interactions entre les organismes avec leur environnement et j&apos;adore expérimenter ! Pour mon projet de fin de licence je tenais à mettre un point d&apos;honneur sur ce qui me plait le plus en biologie : tenter de comprendre l&apos;incroyable machinerie du vivant.
                 </p>
                 
                 <div className="bg-emerald-100/50 dark:bg-emerald-900/20 p-6 rounded-2xl border-l-4 border-emerald-500">
                   <h3 className="text-emerald-800 dark:text-emerald-300 font-bold mb-2">Le but de ce site ?</h3>
                   <p className="text-gray-700 dark:text-zinc-300 leading-relaxed">
-                    Partager avec vous les coulisses d&apos;un projet de recherche, rendre accessible un univers souvent réservé à des particuliers et vous montrer que rien n&apos;est prévisible en biologie. Destiné aux curieux, ce site vous emmène à la découverte de l&apos;hydrotropisme chez la plante modèle <span className="italic">Arabidopsis thaliana</span> en passant par plusieurs concepts clés de physiologie végétale, d&apos;adaptation évolutive et de biologie moléculaire.
+                    Partager avec vous les coulisses d&apos;un projet de recherche, rendre accessible un univers souvent réservé à des particuliers et vous montrer que rien n&apos;est prévisible en biologie. Destiné aux curieux, ce site vous emmène à la découverte de l&apos;hydrotropisme chez la plante modèle <span className="italic">Arabidopsis thaliana </span> en passant par plusieurs concepts clés de physiologie végétale, d&apos;adaptation évolutive et de biologie moléculaire.
                   </p>
                 </div>
 
                 <p className="text-gray-700 dark:text-zinc-300 leading-relaxed">
-                  On tentera de répondre à comment le stress hydrique impacte l&apos;architecture racinaire chez <span className="italic">A. thaliana</span> et on tentera de comprendre le rôle de l&apos;auxine dans ce mécanisme.
-                </p>
+                  On tentera de répondre à comment le stress hydrique impacte l&apos;architecture racinaire chez <span className="italic">A. thaliana </span> et on tentera de comprendre le rôle de l&apos;auxine dans ce mécanisme.
+                 </p>
               </div>
               
               <div className="bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-sm border border-zinc-100 dark:border-zinc-700 flex flex-col justify-center text-center">
                 <div className="w-20 h-20 bg-emerald-100 dark:bg-emerald-900 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl"></div>
                 <h4 className="font-bold text-gray-900 dark:text-zinc-100">L&apos;objectif</h4>
                 <p className="text-sm text-gray-600 dark:text-zinc-400 mt-2 leading-relaxed">
-                  Comprendre comment le stress hydrique impacte l&apos;architecture racinaire chez <span className="italic">A. thaliana</span> et le rôle de l&apos;auxine dans ce mécanisme.
+                  Comprendre comment le stress hydrique impacte l&apos;architecture racinaire chez <span className="italic">A. thaliana </span> et le rôle de l&apos;auxine dans ce mécanisme.
                 </p>
               </div>
             </div>
 
             <div className="mt-12 p-8 border-t border-zinc-100 dark:border-zinc-800 space-y-6 text-sm sm:text-base">
               <p className="text-gray-700 dark:text-zinc-300 leading-relaxed italic">
-                On commence notre parcours sur la paillasse d&apos;une aspirante scientifique à la recherche d&apos;idées de montages expérimentaux: Ici on va décortiquer comment mettre en place une expérience qui nous permet de répondre à notre question. On fera ensuite appel à notre fidèle compagnon de route, l&apos;outil indispensable des chercheurs: sans littérature, rien n&apos;est possible.
+                On commence notre parcours sur la paillasse d&apos;une aspirante scientifique à la recherche d&apos;idées de montages expérimentaux : Ici on va décortiquer comment mettre en place une expérience qui nous permet de répondre à notre question. On fera ensuite appel à notre fidèle compagnon de route, l&apos;outil indispensable des chercheurs : sans littérature, rien n&apos;est possible.
               </p>
               <p className="text-gray-700 dark:text-zinc-300 leading-relaxed italic">
                 Tôt ou tard nous affronterons le terrible mage de la vérité : les statistiques ! Elles nous permettront de mettre de la lumière sur notre chemin, que ça nous plaise ou pas… Notre chemin se terminera par une consultation de la littérature pour répondre à notre objectif et repartir vers de nouvelles pistes à explorer.
@@ -196,7 +196,7 @@ export default function Home() {
                 content: (
                   <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500 text-base">
                     <p className="text-gray-700 dark:text-zinc-300 leading-relaxed">
-                      Les racines d&apos;{" "}
+                      Les racines d&apos;
                       <Tooltip 
                         term="Arabidopsis thaliana" 
                         definition="Arabidopsis thaliana (ou l'arabiette des dames) est une petite plante de la famille des Brassicacées qui sert d'organisme modèle universel en biologie végétale et en génétique. Elle est plébiscitée par les chercheurs du monde entier en raison de sa taille réduite, de son cycle de vie ultra-rapide (environ 6 semaines) et de sa production massive de graines. De plus, c'est la toute première plante dont le génome a été entièrement séquencé en l'an 2000, ce qui en fait l'équivalent de la souris de laboratoire pour le monde végétal." 
@@ -209,7 +209,7 @@ export default function Home() {
                       , modulée par l&apos;environnement (disponibilité en nutriments, stress salin ou hydrique).
                     </p>
                     <p className="text-gray-700 dark:text-zinc-300 leading-relaxed">
-                      La plasticité des racines liée à l&apos;eau spécifiquement est l&apos;hydrotropie et elle implique à la fois des modifications morphologiques et des ajustements de l&apos;{" "}
+                      La plasticité des racines liée à l&apos;eau spécifiquement est l&apos;hydrotropie et elle implique à la fois des modifications morphologiques et des ajustements de l&apos;
                       <Tooltip 
                         term="expression de gènes" 
                         definition="Processus biochimique par lequel l'information génétique contenue dans l'ADN est lue et convertie en un produit fonctionnel, le plus souvent une protéine." 
@@ -473,7 +473,7 @@ export default function Home() {
                   <div className="text-sm space-y-2">
                     <p>
                       Les plantules de 5/6 jours sont prélevées avec précaution à l&apos;aide d&apos;une pince fine de précision. 
-                      L&apos;{" "}
+                      L&apos;
                       <Tooltip term="apex" definition="L'extrémité terminale d'une racine, une zone hautement dynamique d'à peine quelques millimètres qui est responsable de la croissance, de la perception environnementale et de l'exploration du sol. Il est structuré en plusieurs régions fonctionnelles distinctes : la coiffe (qui protège la pointe et perçoit les stimuli comme la gravité ou l'humidité), le méristème apical (le siège d'une division cellulaire intense), et la zone d'élongation (où les cellules s'allongent pour faire avancer la racine). C'est au niveau de cet apex que s'intègrent les signaux moléculaires complexes." /> 
                       {" "}racinaire est positionné au-dessus de la jonction diagonale séparant le milieu contrôle et le milieu PEG (frontière du gradient). 
                     </p>
@@ -611,7 +611,7 @@ export default function Home() {
                   <div className="space-y-6">
                     <div className="max-w-2xl">
                       <p className="text-gray-600 dark:text-zinc-400 leading-relaxed text-sm mb-4">
-                        L&apos;{" "}
+                        L&apos;
                         <Tooltip term="analyse de variance (ANOVA)" definition="Méthode statistique qui permet de comparer simultanément les moyennes de trois groupes ou plus, afin de déterminer si au moins l'un d'entre eux se distingue de manière significative des autres." /> 
                         {" "}révèle un effet significatif du milieu sur la croissance (F(3,57) = 3.15, p = 0.0318).
                       </p>

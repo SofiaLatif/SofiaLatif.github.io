@@ -34,7 +34,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
   return (
     <>
       <div 
-        className="relative group w-full h-full bg-white rounded-lg overflow-hidden border border-zinc-200 cursor-zoom-in"
+        className="relative group w-full h-full bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-800 cursor-zoom-in"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         onClick={() => setIsZoomed(true)}

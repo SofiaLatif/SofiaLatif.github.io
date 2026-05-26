@@ -20,7 +20,7 @@ declare global {
         zoomTo: () => void;
         render: () => void;
       };
-      download: (path: string, viewer: any, options: object, callback: () => void) => void;
+      download: (path: string, viewer: unknown, options: object, callback: () => void) => void;
     };
   }
 }

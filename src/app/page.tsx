@@ -282,7 +282,7 @@ export default function Home() {
                               description={
                                 <>
                                   <p><strong>La configuration :</strong> La Boucle D est repliée vers l&apos;intérieur, directement en travers du canal.</p>
-                                  <p><strong>Le \&quot;bouchon\&quot; :</strong> Une Leucine (Leu197) se place au milieu du pore. Elle agit comme un bouchon de liège enfoncé dans le tuyau.</p>
+                                  <p><strong>Le bouchon :</strong> Une Leucine (Leu197) se place au milieu du pore. Elle agit comme un bouchon de liège enfoncé dans le tuyau.</p>
                                   <p className="italic"><strong>Conséquence :</strong> L&apos;eau est bloquée. La cellule est isolée hydrauliquement pour éviter de perdre son eau vers un sol sec.</p>
                                 </>
                               }

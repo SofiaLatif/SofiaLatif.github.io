@@ -11,23 +11,23 @@ import { useState, useEffect } from 'react';
 
 const pnasImages = [
   {
-    src: '/pnas_images/pnas.1804130115fig01.jpg',
+    src: '/pnas_images/pnas_1804130115fig01.jpg',
     legend: "Fig. 1. Détection du gradient hydrique : Cette imagerie montre comment la racine perçoit l'humidité grâce à un signal calcique (en rouge). Ce signal agit comme un indicateur interne permettant à la racine d'identifier la direction de la zone la plus humide."
   },
   {
-    src: '/pnas_images/pnas.1804130115fig02.jpg',
+    src: '/pnas_images/pnas_1804130115fig02.jpg',
     legend: "Fig. 2. Dynamique de la réponse : Dès l'exposition au changement de potentiel hydrique, la signalisation cellulaire s'active quasi-instantanément. Le signal de calcium précède physiquement le mouvement de courbure de la racine."
   },
   {
-    src: '/pnas_images/pnas.1804130115fig03.jpg',
+    src: '/pnas_images/pnas_1804130115fig03.jpg',
     legend: "Fig. 3. Transmission de l'information : Le signal calcique circule spécifiquement via les tissus conducteurs (le phloème). Ce réseau permet de coordonner la réponse de l'ensemble de la racine face au stimulus localisé."
   },
   {
-    src: '/pnas_images/pnas.1804130115fig04.jpg',
+    src: '/pnas_images/pnas_1804130115fig04.jpg',
     legend: "Fig. 4. Rôle instructeur du calcium : En manipulant artificiellement les niveaux de calcium cytosolique, les chercheurs démontrent que cet élément contrôle directement la trajectoire de l'apex racinaire vers l'eau."
   },
   {
-    src: '/pnas_images/pnas.1804130115fig05.jpg',
+    src: '/pnas_images/pnas_1804130115fig05.jpg',
     legend: "Fig. 5. Interaction protéique clé : La découverte de l'interaction directe entre les protéines ECA1 et MIZ1 révèle le mécanisme moléculaire fondamental qui facilite la signalisation calcique nécessaire à l'hydrotropisme."
   },
 ];
@@ -277,7 +277,7 @@ export default function Home() {
                           </p>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <PDBVisualizer 
-                              pdbPath="/SoPIP2_1_closed.pdb" 
+                              pdbPath="/sopip2_1_closed.pdb" 
                               title="L'état FERMÉ"
                               description={
                                 <>
@@ -288,11 +288,11 @@ export default function Home() {
                               }
                             />
                             <PDBVisualizer 
-                              pdbPath="/SoPIP2_1_open.pdb" 
+                              pdbPath="/sopip2_1_open.pdb" 
                               title="L'état OUVERT"
                               description={
                                 <>
-                                  <p><strong>La configuration :</strong> La Boucle D s&apos;écarte du centre et se déplace vers l&apos;extérieur du pore.</p>
+                                  <p><strong>La configuration :</strong> La Boucle D s&apos;écarte du centre et se deplace vers l&apos;extérieur du pore.</p>
                                   <p><strong>Le bouchon est retiré :</strong> La Leu197 n&apos;obstrue plus le canal. Le tuyau est complètement dégagé.</p>
                                   <p className="italic"><strong>Conséquence :</strong> L&apos;eau peut traverser librement et très rapidement (plus de 3 milliards de molécules par seconde !).</p>
                                 </>
@@ -532,56 +532,56 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-2 bg-zinc-200 dark:bg-zinc-800 rounded-lg p-2 border border-zinc-300">
                   <button 
                     onClick={() => setSelectedDetailImage({
-                      src: '/MERGE-ctl r3 bas.jpg', 
+                      src: '/merge_ctl_r3_bas.jpg', 
                       title: 'Controle (Moyenne CTCF: 76,80)',
                       description: "Observation au microscope confocal de la fluorescence GFP (pDR5::GFP) dans l'apex racinaire en condition contrôle (milieu HG). Valeur moyenne mesurée : 76,80 CTCF."
                     })}
                     className="group space-y-1 text-left"
                   >
                     <div className="relative overflow-hidden rounded shadow-sm cursor-zoom-in">
-                      <img src="/MERGE-ctl r3 bas.jpg" alt="Controle" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
+                      <img src="/merge_ctl_r3_bas.jpg" alt="Controle" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                     </div>
                     <p className="text-[10px] text-center text-zinc-500 font-medium">Controle (Moyenne: 76,80)</p>
                   </button>
                   <button 
                     onClick={() => setSelectedDetailImage({
-                      src: '/MERGE_CTL PEG r1 bas.jpg', 
+                      src: '/merge_ctl_peg_r1_bas.jpg', 
                       title: 'PEG (Moyenne CTCF: 52,65)',
                       description: "Apex racinaire soumis à un stress osmotique homogène (milieu PEG). Valeur moyenne mesurée : 52,65 CTCF."
                     })}
                     className="group space-y-1 text-left"
                   >
                     <div className="relative overflow-hidden rounded shadow-sm cursor-zoom-in">
-                      <img src="/MERGE_CTL PEG r1 bas.jpg" alt="PEG" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
+                      <img src="/merge_ctl_peg_r1_bas.jpg" alt="PEG" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                     </div>
                     <p className="text-[10px] text-center text-zinc-500 font-medium">PEG (Moyenne: 52,65)</p>
                   </button>
                   <button 
                     onClick={() => setSelectedDetailImage({
-                      src: '/MERGE_PEG (haut) r3 bas.jpg', 
+                      src: '/merge_peg_haut_r3_bas.jpg', 
                       title: 'PEG/CONTROLE (Moyenne CTCF: 65,64)',
                       description: "Apex racinaire au niveau de la jonction d'un gradient hydrique (côté PEG vers side HG). Valeur moyenne mesurée : 65,64 CTCF."
                     })}
                     className="group space-y-1 text-left"
                   >
                     <div className="relative overflow-hidden rounded shadow-sm cursor-zoom-in">
-                      <img src="/MERGE_PEG (haut) r3 bas.jpg" alt="PEG/CONTROLE" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
+                      <img src="/merge_peg_haut_r3_bas.jpg" alt="PEG/CONTROLE" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                     </div>
                     <p className="text-[10px] text-center text-zinc-500 font-medium">PEG/CONTROLE (Moyenne: 65,64)</p>
                   </button>
                   <button 
                     onClick={() => setSelectedDetailImage({
-                      src: '/MERGE_PEG(haut)  r1 bas.jpg', 
+                      src: '/merge_peg_haut_r1_bas.jpg', 
                       title: 'CONTROLE/PEG (Moyenne CTCF: 54,28)',
                       description: "Apex racinaire au niveau de la jonction d'un gradient hydrique (côté HG vers side PEG). Valeur moyenne mesurée : 54,28 CTCF."
                     })}
                     className="group space-y-1 text-left"
                   >
                     <div className="relative overflow-hidden rounded shadow-sm cursor-zoom-in">
-                      <img src="/MERGE_PEG(haut)  r1 bas.jpg" alt="CONTROLE/PEG" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
+                      <img src="/merge_peg_haut_r1_bas.jpg" alt="CONTROLE/PEG" className="w-full h-32 object-cover transition-transform group-hover:scale-110" />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                     </div>
                     <p className="text-[10px] text-center text-zinc-500 font-medium">CONTROLE/PEG (Moyenne: 54,28)</p>
@@ -617,7 +617,7 @@ export default function Home() {
                       </p>
                       <div className="relative h-64 bg-white dark:bg-zinc-800 rounded-xl border border-emerald-100 dark:border-emerald-800 overflow-hidden shadow-inner group">
                         <img 
-                          src="/plot_A_longueur.png" 
+                          src="/plot_a_longueur.png" 
                           alt="Graphe R : Longueur Racinaire" 
                           className="object-contain w-full h-full p-2 transition-transform duration-700 group-hover:scale-105"
                         />
@@ -633,7 +633,7 @@ export default function Home() {
                         <div className="grid sm:grid-cols-2 gap-6">
                           <div className="space-y-2">
                             <strong className="text-emerald-700 dark:text-emerald-400 block underline decoration-emerald-200">1. Inhibition par stress global (PEG)</strong> 
-                            <p className="text-xs">Le milieu homogène réduit la pression de turgescence cellulaire, empêchant l&apos;extension des parois et ralentissant l&apos;élongation (moyenne de 1,90 cm).</p>
+                            <p className="text-xs">Le milieu homogène réduit la plateforme de turgescence cellulaire, empêchant l&apos;extension des parois et ralentissant l&apos;élongation (moyenne de 1,90 cm).</p>
                           </div>
                           <div className="space-y-2">
                             <strong className="text-emerald-700 dark:text-emerald-400 block underline decoration-emerald-200">2. Hydrostimulation en gradient</strong> 
@@ -661,14 +661,14 @@ export default function Home() {
                       </p>
                       <div className="relative h-64 bg-white dark:bg-zinc-800 rounded-xl border border-amber-100 dark:border-amber-800 overflow-hidden shadow-inner group">
                         <img 
-                          src="/plot_A_angle.png" 
+                          src="/plot_a_angle.png" 
                           alt="Graphe R : Angle de Courbure" 
                           className="object-contain w-full h-full p-2 transition-transform duration-700 group-hover:scale-105"
                         />
                       </div>
                     </div>
 
-                    <div className="bg-amber-50/50 dark:bg-amber-950/10 p-6 rounded-2xl border border-amber-100 dark:border-amber-900/30">
+                    <div className="bg-amber-50/50 dark:bg-amber-950/10 p-6 rounded-2xl border border-amber-100 dark:border-amber-800 overflow-hidden shadow-inner group">
                       <h5 className="text-amber-800 dark:text-amber-300 font-bold text-sm mb-3">Interprétation Scientifique</h5>
                       <div className="space-y-4 text-sm text-gray-700 dark:text-zinc-300 leading-relaxed">
                         <p>
@@ -716,7 +716,7 @@ export default function Home() {
                       </p>
                       <div className="relative h-64 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 overflow-hidden shadow-inner group">
                         <img 
-                          src="/plot_B_longueur_auxin.png" 
+                          src="/plot_b_longueur_auxin.png" 
                           alt="Graphe CTCF : Fluorescence vs Longueur" 
                           className="object-contain w-full h-full p-2 transition-transform duration-700 group-hover:scale-105"
                         />
@@ -759,7 +759,7 @@ export default function Home() {
                       </p>
                       <div className="relative h-64 bg-white dark:bg-zinc-800 rounded-xl border border-zinc-200 dark:border-zinc-700 overflow-hidden shadow-inner group">
                         <img 
-                          src="/plot_B_angle_auxin.png" 
+                          src="/plot_b_angle_auxin.png" 
                           alt="Graphe CTCF : Fluorescence vs Angle" 
                           className="object-contain w-full h-full p-2 transition-transform duration-700 group-hover:scale-105"
                         />
